@@ -39,6 +39,7 @@
     "webpack-dev-server": "^3.1.6"
   },
   "lingui": {
-    "localeDir": "./src/locale"
+    "localeDir": "./src/locale",
+    "format": "minimal"
   }
 }

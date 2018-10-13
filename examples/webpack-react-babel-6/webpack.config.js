@@ -1,4 +1,5 @@
 const path = require("path")
+const I18nPlugin = require('./i18n-webpack-plugin')
 
 module.exports = {
   mode: "development",
@@ -27,5 +28,8 @@ module.exports = {
     hot: true,
     inline: true,
     contentBase: path.resolve("public")
-  }
+  },
+  plugins: [
+    new I18nPlugin({})
+  ],
 }
